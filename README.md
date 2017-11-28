@@ -1,4 +1,10 @@
 # react-starter-kit
+
+## npm scripts
+- _npm start_ - start Webpack Dev Server on port 9000 with "development" environment.
+- _npm run build_ - builds bundle.js and styles.css for production.
+- _npm run analyse_ - builds bundle.js and styles.css for production with enabled Webpack Bundle Analyzer.
+
 ## Includes
 ### Production Dependencies
 - [React 16.1.1](https://www.npmjs.com/package/react) - view library.

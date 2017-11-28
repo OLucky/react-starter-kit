@@ -24,7 +24,7 @@ module.exports = env => {
         plugins = plugins.concat(pluginsProduction);
     }
 
-    if(env.ANALYZE_BUNDLE) {
+    if(env.ANALYSE_BUNDLE) {
         plugins = plugins.concat(pluginsAnalyze);
     }
 

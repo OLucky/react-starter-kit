@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --env.NODE_ENV=development",
     "build": "webpack --env.NODE_ENV=production --progress -p",
-    "analyze": "webpack --env.NODE_ENV=production --env.ANALYZE_BUNDLE=true --progress -p"
+    "analyse": "webpack --env.NODE_ENV=production --env.ANALYSE_BUNDLE=true --progress -p"
   },
   "author": "Arounda",
   "license": "MIT",
