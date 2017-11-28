@@ -1,10 +1,5 @@
 # react-starter-kit
 
-## npm scripts
-- _npm start_ - start Webpack Dev Server on port 9000 with "development" environment.
-- _npm run build_ - builds bundle.js and styles.css for production.
-- _npm run analyse_ - builds bundle.js and styles.css for production with enabled Webpack Bundle Analyzer.
-
 ## Includes
 ### Production Dependencies
 - [React 16.1.1](https://www.npmjs.com/package/react) - view library.
@@ -29,3 +24,17 @@
 - [CSS Loader 0.28.7](https://www.npmjs.com/package/css-loader) - importing css into bundle.
 - [Sass Loader 6.0.6](https://www.npmjs.com/package/sass-loader) - compiling sass/scss files into css. 
 - [PostCSS Loader 2.0.9](https://www.npmjs.com/package/postcss-loader) - enabling postcss processing for styles in bundle.
+
+## npm scripts
+- _npm start_ - start Webpack Dev Server on port 9000.
+- _npm run build_ - builds bundle.js and styles.css for production.
+- _npm run analyse_ - builds bundle.js and styles.css for production with enabled Webpack Bundle Analyzer.
+
+## Prefered folder structure so far
+- _dist/_ - files for deployment on server. Output destination for Webpack.
+- _src/_ - entry point for Webpack (index.js), main .scss file (styles.scss), potscss config. 
+  - _/scss/_ - .scss files.
+  - _/scripts/_ - .js files.
+  - _/assets/_ - app assets (images, fonts etc.)
+  
+  Inner structure of src/ subfolders may vary though files are prefered to be grouped by domain.
