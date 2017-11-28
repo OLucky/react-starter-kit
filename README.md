@@ -5,6 +5,8 @@
 - [React 16.2.0](https://www.npmjs.com/package/react) - view library.
 - [React-router 4.2.2](https://www.npmjs.com/package/react-router-dom) - application routing.
 
+Redux, MobX, .setState or any other state management library choice is based on the project requirements.
+
 ### Dev Dependencies
 - [Webpack 3.8.1](https://www.npmjs.com/package/webpack) - code bundling and minification.
 - [Webpack Dev Server 2.9.5](https://www.npmjs.com/package/webpack-dev-server) - dev server with hot reloading and webpack integration.
