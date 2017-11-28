@@ -14,7 +14,7 @@
 - [Babel Preset React 6.24.1](https://www.npmjs.com/package/babel-preset-react) - Babel's preset for React.
 - [Node Sass 4.7.2](https://www.npmjs.com/package/node-sass) - Sass usage in Nove environment.
 - [Autoprefixer 7.1.6](https://www.npmjs.com/package/autoprefixer) - prefixing css on output for browsers compatibility.
-- [](https://www.npmjs.com/package/) - 
+- [PostCss Import 11.0.0](https://www.npmjs.com/package/) - importing css files in scss-files. Useful when working with libraries.
 
 ### Dev Dependencies - Webpack Loaders
 - [Babel Loader 7.1.2](https://www.npmjs.com/package/babel-loader) - to use Babel with Webpack.
