@@ -32,7 +32,7 @@ Redux, MobX, .setState or any other state management library choice is based on 
 - _npm run build_ - builds bundle.js and styles.css for production.
 - _npm run analyse_ - builds bundle.js and styles.css for production with enabled Webpack Bundle Analyzer.
 
-## Prefered folder structure so far
+## Prefered folders structure so far
 - _dist/_ - files for deployment on server. Output destination for Webpack.
 - _src/_ - entry point for Webpack (index.js), main .scss file (styles.scss), potscss config. 
   - _/scss/_ - .scss files.
