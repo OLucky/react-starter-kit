@@ -2,12 +2,12 @@
 
 ## Includes
 ### Production Dependencies
-- [React 16.1.1](https://www.npmjs.com/package/react) - view library.
+- [React 16.2.0](https://www.npmjs.com/package/react) - view library.
 - [React-router 4.2.2](https://www.npmjs.com/package/react-router-dom) - application routing.
 
 ### Dev Dependencies
 - [Webpack 3.8.1](https://www.npmjs.com/package/webpack) - code bundling and minification.
-- [Webpack Dev Server 2.9.4](https://www.npmjs.com/package/webpack-dev-server) - dev server with hot reloading and webpack integration.
+- [Webpack Dev Server 2.9.5](https://www.npmjs.com/package/webpack-dev-server) - dev server with hot reloading and webpack integration.
 - [Webpack Bundle Analyzer 2.9.1](https://www.npmjs.com/package/webpack-bundle-analyzer) - checking structure and size of webpack output bundle for optimization.
 - [Extract Text Webpack Plugin](https://www.npmjs.com/package/extract-text-webpack-plugin) - to separate styles from scripts bundle on production.  
 - [Babel 6.26.0](https://www.npmjs.com/package/babel-core) - JS-code compiling for compatibility with older browsers.
