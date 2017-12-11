@@ -8,15 +8,15 @@
 Redux, MobX, .setState or any other state management library choice is based on the project requirements.
 
 ### Dev Dependencies
-- [Webpack 3.8.1](https://www.npmjs.com/package/webpack) - code bundling and minification.
-- [Webpack Dev Server 2.9.5](https://www.npmjs.com/package/webpack-dev-server) - dev server with hot reloading and webpack integration.
+- [Webpack 3.10.0](https://www.npmjs.com/package/webpack) - code bundling and minification.
+- [Webpack Dev Server 2.9.7](https://www.npmjs.com/package/webpack-dev-server) - dev server with hot reloading and webpack integration.
 - [Webpack Bundle Analyzer 2.9.1](https://www.npmjs.com/package/webpack-bundle-analyzer) - checking structure and size of webpack output bundle for optimization.
 - [Extract Text Webpack Plugin](https://www.npmjs.com/package/extract-text-webpack-plugin) - to separate styles from scripts bundle on production.  
 - [Babel 6.26.0](https://www.npmjs.com/package/babel-core) - JS-code compiling for compatibility with older browsers.
 - [Babel Preset Env 1.6.1](https://www.npmjs.com/package/babel-preset-env) - ES2015+ code compiling to ES5.
 - [Babel Preset React 6.24.1](https://www.npmjs.com/package/babel-preset-react) - Babel's preset for React.
 - [Node Sass 4.7.2](https://www.npmjs.com/package/node-sass) - Sass usage in Node environment.
-- [Autoprefixer 7.1.6](https://www.npmjs.com/package/autoprefixer) - prefixing css on output for browsers compatibility.
+- [Autoprefixer 7.2.2](https://www.npmjs.com/package/autoprefixer) - prefixing css on output for browsers compatibility.
 - [PostCSS Import 11.0.0](https://www.npmjs.com/package/) - importing css files in scss-files. Useful when working with libraries.
 
 ### Dev Dependencies - Webpack Loaders

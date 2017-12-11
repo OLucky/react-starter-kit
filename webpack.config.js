@@ -10,18 +10,21 @@ module.exports = env => {
             "process.env.NODE_ENV": JSON.stringify(env.NODE_ENV)
         }),
     ];
-    const pluginsProduction = [
-        new ExtractTextPlugin({
-            filename: "styles.css"
-        })
-    ];
+    const productionVars = {
+        plugins: [
+            new ExtractTextPlugin({
+                filename: "styles.css"
+            })
+        ]
+    };
+
     const pluginsAnalyze = [
         new BundleAnalyzerPlugin()
     ];
 
 
     if(env.NODE_ENV === "production") {
-        plugins = plugins.concat(pluginsProduction);
+        plugins = plugins.concat(productionVars.plugins);
     }
 
     if(env.ANALYSE_BUNDLE) {
