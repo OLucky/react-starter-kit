@@ -16,13 +16,13 @@ Redux, MobX, .setState or any other state management library choice is based on 
 - [Babel Preset Env 1.6.1](https://www.npmjs.com/package/babel-preset-env) - ES2015+ code compiling to ES5.
 - [Babel Preset React 6.24.1](https://www.npmjs.com/package/babel-preset-react) - Babel's preset for React.
 - [Node Sass 4.7.2](https://www.npmjs.com/package/node-sass) - Sass usage in Node environment.
-- [Autoprefixer 7.2.2](https://www.npmjs.com/package/autoprefixer) - prefixing css on output for browsers compatibility.
+- [Autoprefixer 7.2.3](https://www.npmjs.com/package/autoprefixer) - prefixing css on output for browsers compatibility.
 - [PostCSS Import 11.0.0](https://www.npmjs.com/package/) - importing css files in scss-files. Useful when working with libraries.
 
 ### Dev Dependencies - Webpack Loaders
 - [Babel Loader 7.1.2](https://www.npmjs.com/package/babel-loader) - to use Babel with Webpack.
-- [File Loader 1.1.5](https://www.npmjs.com/package/file-loader) - for processing app assets (currently, images and fonts) with Webpack.
-- [Style Loader 0.19.0](https://www.npmjs.com/package/style-loader) - as fallback for Extract Text Webpack Plugin.
+- [File Loader 1.1.6](https://www.npmjs.com/package/file-loader) - for processing app assets (currently, images and fonts) with Webpack.
+- [Style Loader 0.19.1](https://www.npmjs.com/package/style-loader) - as fallback for Extract Text Webpack Plugin.
 - [CSS Loader 0.28.7](https://www.npmjs.com/package/css-loader) - importing css into bundle.
 - [Sass Loader 6.0.6](https://www.npmjs.com/package/sass-loader) - compiling sass/scss files into css. 
 - [PostCSS Loader 2.0.9](https://www.npmjs.com/package/postcss-loader) - enabling postcss processing for styles in bundle.
