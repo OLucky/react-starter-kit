@@ -2,30 +2,30 @@
 
 ## Includes
 ### Production Dependencies
-- [React 16.2.0](https://www.npmjs.com/package/react) - view library.
-- [React-router 4.2.2](https://www.npmjs.com/package/react-router-dom) - application routing.
+- [React](https://www.npmjs.com/package/react) - view library.
+- [React-router](https://www.npmjs.com/package/react-router-dom) - application routing.
 
 Redux, MobX, .setState or any other state management library choice is based on the project requirements.
 
 ### Dev Dependencies
-- [Webpack 3.10.0](https://www.npmjs.com/package/webpack) - code bundling and minification.
-- [Webpack Dev Server 2.11.0](https://www.npmjs.com/package/webpack-dev-server) - dev server with hot reloading and webpack integration.
-- [Webpack Bundle Analyzer 2.9.2](https://www.npmjs.com/package/webpack-bundle-analyzer) - checking structure and size of webpack output bundle for optimization.
+- [Webpack](https://www.npmjs.com/package/webpack) - code bundling and minification.
+- [Webpack Dev Server](https://www.npmjs.com/package/webpack-dev-server) - dev server with hot reloading and webpack integration.
+- [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) - checking structure and size of webpack output bundle for optimization.
 - [Extract Text Webpack Plugin](https://www.npmjs.com/package/extract-text-webpack-plugin) - to separate styles from scripts bundle on production.  
-- [Babel 6.26.0](https://www.npmjs.com/package/babel-core) - JS-code compiling for compatibility with older browsers.
-- [Babel Preset Env 1.6.1](https://www.npmjs.com/package/babel-preset-env) - ES2015+ code compiling to ES5.
-- [Babel Preset React 6.24.1](https://www.npmjs.com/package/babel-preset-react) - Babel's preset for React.
-- [Node Sass 4.7.2](https://www.npmjs.com/package/node-sass) - Sass usage in Node environment.
-- [Autoprefixer 7.2.5](https://www.npmjs.com/package/autoprefixer) - prefixing css on output for browsers compatibility.
-- [PostCSS Import 11.0.0](https://www.npmjs.com/package/) - importing css files in scss-files. Useful when working with libraries.
+- [Babel](https://www.npmjs.com/package/babel-core) - JS-code compiling for compatibility with older browsers.
+- [Babel Preset Env](https://www.npmjs.com/package/babel-preset-env) - ES2015+ code compiling to ES5.
+- [Babel Preset React](https://www.npmjs.com/package/babel-preset-react) - Babel's preset for React.
+- [Node Sass](https://www.npmjs.com/package/node-sass) - Sass usage in Node environment.
+- [Autoprefixer](https://www.npmjs.com/package/autoprefixer) - prefixing css on output for browsers compatibility.
+- [PostCSS Import](https://www.npmjs.com/package/) - importing css files in scss-files. Useful when working with libraries.
 
 ### Dev Dependencies - Webpack Loaders
-- [Babel Loader 7.1.2](https://www.npmjs.com/package/babel-loader) - to use Babel with Webpack.
-- [File Loader 1.1.6](https://www.npmjs.com/package/file-loader) - for processing app assets (currently, images and fonts) with Webpack.
-- [Style Loader 0.19.1](https://www.npmjs.com/package/style-loader) - as fallback for Extract Text Webpack Plugin.
-- [CSS Loader 0.28.9](https://www.npmjs.com/package/css-loader) - importing css into bundle.
-- [Sass Loader 6.0.6](https://www.npmjs.com/package/sass-loader) - compiling sass/scss files into css. 
-- [PostCSS Loader 2.0.10](https://www.npmjs.com/package/postcss-loader) - enabling postcss processing for styles in bundle.
+- [Babel Loader](https://www.npmjs.com/package/babel-loader) - to use Babel with Webpack.
+- [File Loader](https://www.npmjs.com/package/file-loader) - for processing app assets (currently, images and fonts) with Webpack.
+- [Style Loader](https://www.npmjs.com/package/style-loader) - as fallback for Extract Text Webpack Plugin.
+- [CSS Loader](https://www.npmjs.com/package/css-loader) - importing css into bundle.
+- [Sass Loader](https://www.npmjs.com/package/sass-loader) - compiling sass/scss files into css. 
+- [PostCSS Loader](https://www.npmjs.com/package/postcss-loader) - enabling postcss processing for styles in bundle.
 
 ## npm scripts
 - _npm start_ - start Webpack Dev Server on port 9000.
