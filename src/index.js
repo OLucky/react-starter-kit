@@ -4,6 +4,10 @@ import React, {Component} from "react";
 import {render} from "react-dom";
 
 class Root extends Component {
+	state = {
+		works: true
+	}
+
     render() {
         return (
             <div>

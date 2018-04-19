@@ -46,9 +46,6 @@ module.exports = env => {
                     loader: "babel-loader",
                     include: [path.resolve(__dirname, "src")],
                     exclude: /node_modules/,
-                    options: {
-                        presets: ["env", "react"]
-                    }
                 },
                 {test: /\.css$/, use: ExtractTextPlugin.extract({fallback: "style-loader", use: ["css-loader"]})},
                 {

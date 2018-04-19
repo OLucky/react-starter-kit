@@ -5,7 +5,7 @@
 - [React](https://www.npmjs.com/package/react) - view library.
 - [React-router](https://www.npmjs.com/package/react-router-dom) - application routing.
 
-Redux, MobX, .setState or any other state management library choice is based on the project requirements.
+Redux, MobX, default React or any other way to manage state management choice is based on the project requirements.
 
 ### Dev Dependencies
 - [Webpack](https://www.npmjs.com/package/webpack) - code bundling and minification.
@@ -15,6 +15,7 @@ Redux, MobX, .setState or any other state management library choice is based on 
 - [Babel](https://www.npmjs.com/package/babel-core) - JS-code compiling for compatibility with older browsers.
 - [Babel Preset Env](https://www.npmjs.com/package/babel-preset-env) - ES2015+ code compiling to ES5.
 - [Babel Preset React](https://www.npmjs.com/package/babel-preset-react) - Babel's preset for React.
+- [Babel Plugin Transform Class Properties](https://www.npmjs.com/package/babel-plugin-transform-class-properties) - Babel's plugin for supporting class properties.
 - [Node Sass](https://www.npmjs.com/package/node-sass) - Sass usage in Node environment.
 - [Autoprefixer](https://www.npmjs.com/package/autoprefixer) - prefixing css on output for browsers compatibility.
 - [PostCSS Import](https://www.npmjs.com/package/) - importing css files in scss-files. Useful when working with libraries.
