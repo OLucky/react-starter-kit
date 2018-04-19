@@ -75,7 +75,7 @@ module.exports = env => {
 
             ]
         },
-        devtool: "source-map",
+        devtool: env.NODE_ENV === "production" ? false : "source-map",
         target: "web",
         plugins,
         devServer: {
