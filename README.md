@@ -9,7 +9,7 @@ Redux, MobX, default React or any other way to manage state management choice is
 
 ### Dev Dependencies
 - [Webpack](https://www.npmjs.com/package/webpack) - code bundling and minification.
-- [Webpack Dev Server](https://www.npmjs.com/package/webpack-dev-server) - dev server with hot reloading and webpack integration.
+- [Webpack Serve](https://www.npmjs.com/package/webpack-serve) - dev server.
 - [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) - checking structure and size of webpack output bundle for optimization.
 - [Extract Text Webpack Plugin](https://www.npmjs.com/package/extract-text-webpack-plugin) - to separate styles from scripts bundle on production.  
 - [Babel](https://www.npmjs.com/package/babel-core) - JS-code compiling for compatibility with older browsers.
@@ -29,15 +29,15 @@ Redux, MobX, default React or any other way to manage state management choice is
 - [PostCSS Loader](https://www.npmjs.com/package/postcss-loader) - enabling postcss processing for styles in bundle.
 
 ## npm scripts
-- _npm start_ - start Webpack Dev Server on port 9000.
-- _npm run build_ - builds bundle.js and styles.css for production.
-- _npm run analyse_ - builds bundle.js and styles.css for production with enabled Webpack Bundle Analyzer.
+- _npm start_ - start Webpack Serve on port 9000.
+- _npm run build_ - builds main.js and styles.css for production.
+- _npm run analyse_ - builds main.js and styles.css for production with enabled Webpack Bundle Analyzer.
 
 ## Prefered folders structure so far
-- _dist/_ - files for deployment on server. Output destination for Webpack.
+- _dist/_ - output folder for Webpack in production mode.
 - _src/_ - entry point for Webpack (index.js), main .scss file (styles.scss), potscss config. 
   - _/scss/_ - .scss files.
   - _/scripts/_ - .js files.
-  - _/assets/_ - app assets (images, fonts etc.)
+  - _/public/_ - static files and assets, content folder for webpack-serve
   
   Inner structure of src/ subfolders may vary though files are prefered to be grouped by domain.

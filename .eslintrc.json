@@ -1,45 +1,35 @@
 {
   "env": {
-    "browser": true,
-    "node": true,
-    "commonjs": true,
-    "es6": true,
-    "jquery": true
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "node": true
   },
-  "extends": "eslint:recommended",
   "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
-      "jsx": true
-    },
-    "sourceType": "module"
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "jsx",
-    "import",
-    "babel"
-  ],
   "rules": {
-    "linebreak-style": [
-      "error",
-      "windows"
-    ],
+    "no-delete-var":"error",
+    "no-const-assign": "warn",
+    "no-this-before-super": "warn",
+    "no-undef": "warn",
+    "no-unreachable": "warn",
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "constructor-super": "warn",
+    "valid-typeof": "warn",
     "quotes": [
-      "error",
-      "double"
+        "warn",            
+        "double"
     ],
-    "semi": [
-      "error",
-      "always"
-    ],
-    "jsx/uses-factory": [1, {"pragma": "JSX"}],
-    "jsx/mark-used-vars": 1,
-    "jsx/no-undef": 1,
-    "babel/new-cap": 1,
-    "babel/object-curly-spacing": 1,
-    "babel/no-invalid-this": 1,
-    "babel/semi": 1
-  }
+    "no-mixed-spaces-and-tabs":"warn"
+},
+  "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ]
 }

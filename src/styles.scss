@@ -1,28 +1,4 @@
-@import "scss/general/colors";
-@import "scss/general/fonts";
+@import "./scss/tools/reset.scss";
 
-//Basic Reset START
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "./scss/general/general.scss";
 
-html, body {
-  min-height: 100vh;
-}
-
-a {
-  text-decoration: none;
-  color: unset;
-}
-
-ul, ol {
-  list-style: none;
-}
-
-//Basic Reset END
-
-.no-scroll {
-  overflow: hidden;
-}
