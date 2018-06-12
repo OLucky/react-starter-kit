@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { hot } from "react-hot-loader";
 
 class App extends Component {
   state = {
@@ -9,10 +10,10 @@ class App extends Component {
     return (
       <div>
         <h3> - Hello there.</h3>
-        <h3> - General Kenobi!!!</h3>
+        <h3> - General Kenobi!</h3>
       </div>
     );
   }
 }
 
-export default App;
+export default hot(module)(App);

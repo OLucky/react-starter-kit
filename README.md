@@ -11,7 +11,7 @@ Redux, MobX, default React or any other way to manage state management choice is
 - [Webpack](https://www.npmjs.com/package/webpack) - code bundling and minification.
 - [Webpack Serve](https://www.npmjs.com/package/webpack-serve) - dev server.
 - [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) - checking structure and size of webpack output bundle for optimization.
-- [Extract Text Webpack Plugin](https://www.npmjs.com/package/extract-text-webpack-plugin) - to separate styles from scripts bundle on production.  
+- [Mini CSS Extract Plugin](https://www.npmjs.com/package/mini-css-extract-plugin) - to separate styles from scripts bundle on production.  
 - [Babel](https://www.npmjs.com/package/babel-core) - JS-code compiling for compatibility with older browsers.
 - [Babel Preset Env](https://www.npmjs.com/package/babel-preset-env) - ES2015+ code compiling to ES5.
 - [Babel Preset React](https://www.npmjs.com/package/babel-preset-react) - Babel's preset for React.
@@ -23,6 +23,7 @@ Redux, MobX, default React or any other way to manage state management choice is
 ### Dev Dependencies - Webpack Loaders
 - [Babel Loader](https://www.npmjs.com/package/babel-loader) - to use Babel with Webpack.
 - [File Loader](https://www.npmjs.com/package/file-loader) - for processing app assets (currently, images and fonts) with Webpack.
+- [React Hot Loader](https://www.npmjs.com/package/react-hot-loader) - for using HMR while editing React components.
 - [Style Loader](https://www.npmjs.com/package/style-loader) - as fallback for Extract Text Webpack Plugin.
 - [CSS Loader](https://www.npmjs.com/package/css-loader) - importing css into bundle.
 - [Sass Loader](https://www.npmjs.com/package/sass-loader) - compiling sass/scss files into css. 
