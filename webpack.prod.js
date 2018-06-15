@@ -1,7 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin")
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = env => ({
@@ -17,38 +17,38 @@ module.exports = env => ({
   },
   module: {
     rules: [{
-        test: /\.js$/,
-        loader: "babel-loader",
-        include: [path.resolve(__dirname, "src")],
-        exclude: /node_modules/
-      },
-      {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"]
-      },
-      {
-        test: /\.scss$/,
-        exclude: /node_modules/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"]
-      },
-      {
-        test: /\.(jpe?g|png|gif)$/i,
-        use: [{
-          loader: "file-loader",
-          options: {
-            name: "./[path][name].[ext]"
-          }
-        }]
-      },
-      {
-        test: /\.(ttf|eot|svg|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        use: [{
-          loader: "file-loader",
-          options: {
-            name: "./[path][name].[ext]"
-          }
-        }]
-      }
+      test: /\.js$/,
+      loader: "babel-loader",
+      include: [path.resolve(__dirname, "src")],
+      exclude: /node_modules/
+    },
+    {
+      test: /\.css$/,
+      use: [MiniCssExtractPlugin.loader, "css-loader"]
+    },
+    {
+      test: /\.scss$/,
+      exclude: /node_modules/,
+      use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"]
+    },
+    {
+      test: /\.(jpe?g|png|gif)$/i,
+      use: [{
+        loader: "file-loader",
+        options: {
+          name: "./[path][name].[ext]"
+        }
+      }]
+    },
+    {
+      test: /\.(ttf|eot|svg|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+      use: [{
+        loader: "file-loader",
+        options: {
+          name: "./[path][name].[ext]"
+        }
+      }]
+    }
     ]
   },
   target: "web",
