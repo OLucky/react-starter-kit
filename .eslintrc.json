@@ -26,7 +26,7 @@
         "warn",            
         "double"
     ],
-    "indent": ["error", 2],
+    "indent": ["error", "tab"],
     "semi":"warn",
     "no-mixed-spaces-and-tabs":"warn"
 },
