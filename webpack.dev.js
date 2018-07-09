@@ -9,6 +9,15 @@ module.exports = {
 		publicPath: ""
 	},
 	devtool: "source-map",
+	module: {
+		rules: [
+			{
+				test: /\.(scss|css)$/,
+				exclude: /node_modules/,
+				use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"]
+			},
+		]
+	},
 	plugins: [
 		new CopyWebpackPlugin([{
 			from: path.join(__dirname, "src/static"),
