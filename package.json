@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-serve",
     "build": "webpack -p --progress --env",
-    "analyze": "webpack -p --progress --env.ANALYZE_BUNDLE=true"
+    "analyze": "cross-env ANALYZE_BUNDLE=true webpack -p --progress"
   },
   "author": "Arounda",
   "license": "MIT",
@@ -26,6 +26,7 @@
     "browser-sync-webpack-plugin": "^2.2.2",
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.2",
+    "cross-env": "^5.2.0",
     "css-loader": "^1.0.0",
     "eslint": "^5.1.0",
     "eslint-plugin-react": "^7.10.0",
