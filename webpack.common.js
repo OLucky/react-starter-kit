@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+const HTMLPluginConfig = require("./html-webpack-plugin.config");
 
 module.exports = {
 	context: path.resolve(__dirname, "./src"),
@@ -26,7 +27,9 @@ module.exports = {
 			use: [{
 				loader: "file-loader",
 				options: {
-					name: "./[path][name].[ext]"          
+					name: "[path][name].[ext]",
+					outputPath: "./",
+					context: path.resolve(__dirname, "src")          
 				}
 			}]
 		},
@@ -35,7 +38,9 @@ module.exports = {
 			use: [{
 				loader: "file-loader",
 				options: {
-					name: "./[path][name].[ext]"
+					name: "[path][name].[ext]",
+					outputPath: "./",
+					context: path.resolve(__dirname, "src")   
 				}
 			}]
 		},
@@ -51,10 +56,7 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new HtmlWebpackPlugin({
-			filename: "index.html",
-			template: "./public/index.html"
-		}),
+		...HTMLPluginConfig,
 		new webpack.DefinePlugin({
 			"process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV)
 		})
