@@ -1,6 +1,8 @@
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
+const history = require("connect-history-api-fallback");
+const convert = require("koa-connect");
 
 module.exports = {
 	mode: "development",
@@ -25,7 +27,7 @@ module.exports = {
 		}]),
 		new BrowserSyncPlugin({
 			host: "localhost",
-			port: 3001,
+			port: 3000,
 			proxy: "http://localhost:9000/"
 		}, {
 			reload: false
@@ -33,6 +35,9 @@ module.exports = {
 	],
 	serve: {
 		port: 9000,
-		content: [path.join(__dirname, "serve")]
+		content: [path.join(__dirname, "serve")],
+		add: (app) => {
+			app.use(convert(history()));
+		}
 	}
 };
