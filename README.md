@@ -7,7 +7,7 @@ Based on React 16 and React Router 4
 - Usage of ES6+ features with Babel.
 - JS linting with ESLint.
 - Handling styles with Autoprefixer and PostCSS.
-- HTML templates support with HTML Webpack Plugin.
+- HTML and EJS templates support with HTML Webpack Plugin.
 
 Redux, MobX or any other way to manage state management choice is based on the project requirements.
 
