@@ -1,12 +1,12 @@
-import "./styles.scss";
+import './styles.scss';
 
-import React from "react";
-import {render} from "react-dom";
+import React from 'react';
+import { render } from 'react-dom';
 
-import App from "./App";
+import App from './App';
 
 if (module.hot) {
-	module.hot.accept();
+  module.hot.accept();
 }
 
-render(<App />, document.getElementById("root"));
+render(<App />, document.getElementById('root'));

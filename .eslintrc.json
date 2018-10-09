@@ -24,14 +24,19 @@
     "valid-typeof": "warn",
     "quotes": [
         "warn",            
-        "double"
+        "single"
     ],
-    "indent": ["error", "2"],
+    "indent": ["error", 2],
     "semi":"warn",
     "no-mixed-spaces-and-tabs":"warn"
 },
   "extends": [
       "eslint:recommended",
       "plugin:react/recommended"
-    ]
+    ],
+  "settings": {
+    "react": {
+      "version": "16.5.2"
+    }
+  }  
 }
