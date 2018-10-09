@@ -14,51 +14,43 @@ module.exports = {
 	},
 	target: "web",
 	module: {
-		rules: [{
-			test: /\.js$/,
-			loader: "babel-loader",
-			options: {
-				cacheDirectory: true
-			},
-			include: [path.resolve(__dirname, "src")],
-			exclude: /node_modules/
-		},
-		{
-			test: /\.(jpe?g|png|gif)$/i,
-			use: [{
-				loader: "file-loader",
+		rules: [
+			{
+				test: /\.js$/,
+				loader: "babel-loader",
 				options: {
-					name: "[path][name].[ext]",
-					outputPath: "./",
-					context: path.resolve(__dirname, "src")          
-				}
-			}]
-		},
-		{
-			test: /\.(ttf|eot|svg|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-			use: [{
-				loader: "file-loader",
-				options: {
-					name: "[path][name].[ext]",
-					outputPath: "./",
-					context: path.resolve(__dirname, "src")   
-				}
-			}]
-		},
-		{
-			test: /\.(html|ejs)$/,
-			use:[
-				{
-					loader:"html-loader",
-					options: {
-						attrs: ["img:src", "object:data"]
-					}
+					cacheDirectory: true
 				},
-				{ loader: "ejs-html-loader", 
-					options: { htmlWebpackPlugin: HtmlWebpackPlugin }
-				}
-			]
-		}
+				include: [path.resolve(__dirname, "src")],
+				exclude: /node_modules/
+			},
+			{
+        test: [/\.(ttf|eot|svg|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+               /\.(jpe?g|png|gif)$/i],
+				use: [
+					{
+						loader: "file-loader",
+						options: {
+							name: "[path][name].[ext]"
+						}
+					}
+				]
+			},
+			{
+				test: /\.(html|ejs)$/,
+				use: [
+					{
+						loader: "html-loader",
+						options: {
+							attrs: ["img:src", "object:data"]
+						}
+					},
+					{
+						loader: "ejs-html-loader",
+						options: { htmlWebpackPlugin: HtmlWebpackPlugin }
+					}
+				]
+			}
 		]
 	},
 	plugins: [
