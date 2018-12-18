@@ -14,7 +14,7 @@ module.exports = {
     }
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     publicPath: ''
   },
   module: {
@@ -27,11 +27,11 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['build']),
     new CopyWebpackPlugin([
-      { from: path.join(__dirname, 'src/static'), to: path.join(__dirname, 'dist') }
+      { from: path.join(__dirname, 'src/static'), to: path.join(__dirname, 'build') }
     ]),
-    new BundleAnalyzerPlugin({ analyzerMode: process.env.ANALYZE_BUNDLE ? 'server' : 'disabled' }),
+    new BundleAnalyzerPlugin({ analyzerPort: 4000, analyzerMode: process.env.ANALYZE_BUNDLE ? 'server' : 'disabled'  }),
     new MiniCssExtractPlugin({
       filename: 'styles.css'
     })

@@ -1,8 +1,6 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-const history = require('connect-history-api-fallback');
-const convert = require('koa-connect');
 
 module.exports = {
   mode: 'development',
@@ -38,11 +36,12 @@ module.exports = {
       }
     )
   ],
-  serve: {
+  devServer: {
+    compress: true,
     port: 9000,
-    content: [path.join(__dirname, 'serve')],
-    add: app => {
-      app.use(convert(history()));
-    }
+    contentBase: [path.join(__dirname, 'serve')],
+    historyApiFallback: true,
+    clientLogLevel: 'none',
+    hot: true
   }
 };
