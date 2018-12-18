@@ -2,7 +2,7 @@
 Based on React 16 and React Router 4
 
 ## Features
-- Hot Reloading with Webpack Serve and React Hot Loader.
+- Hot Reloading with Webpack Dev Server and React Hot Loader.
 - Support for js, scss, css, png, jpg, svg, ttf, eot, svg, otf from the box.
 - Usage of ES6+ features with Babel.
 - JS linting with ESLint.
