@@ -12,6 +12,9 @@
       },
       "sourceType": "module"
   },
+  "plugins": [
+    "react-hooks"
+  ],
   "rules": {
     "no-delete-var":"error",
     "no-const-assign": "warn",
@@ -28,15 +31,11 @@
     ],
     "indent": ["error", 2],
     "semi":"warn",
-    "no-mixed-spaces-and-tabs":"warn"
+    "no-mixed-spaces-and-tabs":"warn",
+    "react-hooks/rules-of-hooks": "error"
 },
   "extends": [
       "eslint:recommended",
       "plugin:react/recommended"
-    ],
-  "settings": {
-    "react": {
-      "version": "16.5.2"
-    }
-  }  
+    ]
 }
