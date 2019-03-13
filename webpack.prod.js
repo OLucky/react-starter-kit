@@ -1,21 +1,28 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'production',
   optimization: {
+    runtimeChunk: 'single',
     splitChunks: {
-      chunks: 'all',
-      name: 'vendors',
-      minChunks: 2
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all'
+        }
+      }
     }
   },
   output: {
     path: path.resolve(__dirname, 'build'),
-    publicPath: ''
+    publicPath: '',
+    filename: '[name].[contenthash].js'
   },
   module: {
     rules: [
@@ -31,9 +38,17 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: path.join(__dirname, 'src/static'), to: path.join(__dirname, 'build') }
     ]),
-    new BundleAnalyzerPlugin({ analyzerPort: 4000, analyzerMode: process.env.ANALYZE_BUNDLE ? 'server' : 'disabled'  }),
+    new ManifestPlugin({
+      seed: {
+        name: 'React Starter Kit'
+      }
+    }),
+    new BundleAnalyzerPlugin({
+      analyzerPort: 4000,
+      analyzerMode: process.env.ANALYZE_BUNDLE ? 'server' : 'disabled'
+    }),
     new MiniCssExtractPlugin({
-      filename: 'styles.css'
+      filename: 'styles.[contenthash].css'
     })
   ]
 };
