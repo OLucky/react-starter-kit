@@ -11,7 +11,8 @@ module.exports = {
     index: './index.js'
   },
   output: {
-    filename: '[name].js'
+    filename: '[name].js',
+    chunkFilename: '[name].[contenthash].js',
   },
   target: 'web',
   module: {
@@ -31,7 +32,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[path][name].[ext]'
+              name: '[path][name].[hash].[ext]'
             }
           }
         ]

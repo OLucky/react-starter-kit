@@ -34,7 +34,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['build']),
+    new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
       { from: path.join(__dirname, 'src/static'), to: path.join(__dirname, 'build') }
     ]),
@@ -48,7 +48,8 @@ module.exports = {
       analyzerMode: process.env.ANALYZE_BUNDLE ? 'server' : 'disabled'
     }),
     new MiniCssExtractPlugin({
-      filename: 'styles.[contenthash].css'
+      filename: '[name].[contenthash].css',
+      chunkFilename: '[name].[contenthash].css'
     })
   ]
 };

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 
+import generalKenobi from './assets/img/ben.jpg';
+
 class App extends Component {
   state = {
     works: true
@@ -9,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h3> - Hello there</h3>
+        <img src={generalKenobi} width="500"/>
         <h3> - General Kenobi!</h3>
       </div>
     );
