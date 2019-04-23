@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "types": ["node", "webpack-env"],
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true
+  }
+}

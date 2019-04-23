@@ -1,3 +1,4 @@
+//@ts-nocheck
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -9,17 +10,20 @@ const HTMLPluginConfig = require('./html-webpack-plugin.config');
 module.exports = {
   context: path.resolve(__dirname, './src'),
   entry: {
-    index: './index.js'
+    index: './index.tsx'
   },
   output: {
     filename: '[name].js',
     chunkFilename: '[name].[contenthash].js',
   },
   target: 'web',
+  resolve: {
+    extensions: ['.js', '.json', '.ts', '.tsx']
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.js|ts|tsx$/,
         loader: 'babel-loader',
         options: {
           cacheDirectory: true
