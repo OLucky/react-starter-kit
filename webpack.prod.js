@@ -2,7 +2,6 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'production',
@@ -23,15 +22,6 @@ module.exports = {
     publicPath: '',
     filename: '[name].[contenthash].js'
   },
-  module: {
-    rules: [
-      {
-        test: /\.(scss|css)$/,
-        exclude: /node_modules/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
-      }
-    ]
-  },
   plugins: [
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
@@ -40,10 +30,6 @@ module.exports = {
     new BundleAnalyzerPlugin({
       analyzerPort: 4000,
       analyzerMode: process.env.ANALYZE_BUNDLE ? 'server' : 'disabled'
-    }),
-    new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css',
-      chunkFilename: '[name].[contenthash].css'
     })
   ]
 };

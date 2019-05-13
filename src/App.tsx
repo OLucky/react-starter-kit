@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import { hot } from 'react-hot-loader';
 
+import styles from './App.scss';
+
 import generalKenobi from './assets/img/ben.jpg';
 
 class App extends Component {
@@ -10,7 +12,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className={styles.app}>
         <img src={generalKenobi} width="500" />
         <h3> - General Kenobi!</h3>
       </div>

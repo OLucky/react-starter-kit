@@ -32,6 +32,16 @@ module.exports = {
         exclude: /node_modules/
       },
       {
+        test: /\.(scss|css)$/,
+        exclude: /node_modules/,
+        use: ['style-loader', {
+          loader: 'css-loader',
+          options: {
+            modules: true,
+            localIdentName: '[name]__[local]__[hash:base64:5]'
+          }}, 'postcss-loader', 'sass-loader']
+      },
+      {
         test: [/\.(ttf|eot|svg|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/, /\.(jpe?g|png|gif)$/i],
         use: [
           {
